@@ -1,0 +1,126 @@
+# mkdocs yaml dosyasını oluştur, robot ismi androbot ve self balancebot'tur
+# site_name: Androbot Documentation
+# nav:
+#   - Home: index.md
+#   - User Guide:
+#       - Introduction: user-guide/introduction.md
+#       - Getting Started: user-guide/getting-started.md
+#   - API Reference:
+#       - Overview: api/overview.md
+#       - Endpoints: api/endpoints.md
+#   - Tutorials:
+#       - Basic Tutorial: tutorials/basic-tutorial.md
+#       - Advanced Tutorial: tutorials/advanced-tutorial.md
+#   - FAQ: faq.md
+# theme:
+#   name: material
+#   palette:
+#     primary: indigo
+#     accent: indigo
+#   features:
+#     - navigation.tabs
+#     - navigation.top
+#     - navigation.sections
+#     - navigation.expand
+#     - navigation.instant
+#     - navigation.tracking
+#     - navigation.search.highlight
+#     - navigation.search.share
+# markdown_extensions:
+#   - toc:
+#       permalink: true
+#   - admonition
+#   - codehilite:
+#       guess_lang: false
+#   - footnotes
+#   - attr_list
+#   - def_list
+#   - md_in_html
+# plugins:
+#   - search
+#   - mkdocs-material
+
+
+site_name: Androbot Documentation
+site_url: https://androbot.github.io/androbot
+site_description: Documentation for Androbot, a self-balancing robot platform.
+site_author: Harun KURT
+
+nav:
+  - Home: index.md
+  - User Guide:
+      - Introduction: user-guide/introduction.md
+      - Getting Started: user-guide/getting-started.md
+  - Tutorials:
+      - Basic Tutorial: tutorials/basic-tutorial.md
+      - Advanced Tutorial: tutorials/advanced-tutorial.md
+  - FAQ: faq.md
+
+theme:
+  name: material
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  logo: assets/logo.png
+  # favicon: assets/favicon.ico
+  features:
+    - navigation.footer
+  palette:
+    # Dark Mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Dark mode
+      primary: green
+      accent: deep purple
+
+    # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Light mode
+      primary: blue
+      accent: deep orange
+
+markdown_extensions:
+  - attr_list
+  - def_list
+  - fenced_code
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+      permalink_class: headerlink
+      permalink_title: Permalink
+  - pymdownx.betterem
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.magiclink
+  - pymdownx.tasklist
+
+extra:
+  social:
+    - icon: simple/youtube
+      link: https://youtube.com/@harunkurtdev
+    # - icon: simple/linkedin
+      # link: https://linkedin.com/in/
+
+copyright: Copyright &copy; 2025 harunkurtdev
